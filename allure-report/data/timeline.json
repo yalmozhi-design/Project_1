@@ -1,0 +1,51 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "users-MacBook-Pro.local",
+    "children" : [ {
+      "name" : "pid-36411-worker-0",
+      "children" : [ {
+        "name" : "auto suggestion values using for loop",
+        "uid" : "addf6d5709ed079d",
+        "parentUid" : "6adaa8a92ef89e31650bda5c908b6e65",
+        "status" : "passed",
+        "time" : {
+          "start" : 1768448642289,
+          "stop" : 1768448649506,
+          "duration" : 7217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "firefox" ]
+      } ],
+      "uid" : "6adaa8a92ef89e31650bda5c908b6e65"
+    }, {
+      "name" : "pid-36264-worker-0",
+      "children" : [ {
+        "name" : "auto suggestion values using for loop",
+        "uid" : "6ee122a0f53ea044",
+        "parentUid" : "4d81729cb111e4dd023fbd7741559688",
+        "status" : "passed",
+        "time" : {
+          "start" : 1768448333370,
+          "stop" : 1768448340593,
+          "duration" : 7223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "firefox" ]
+      } ],
+      "uid" : "4d81729cb111e4dd023fbd7741559688"
+    } ],
+    "uid" : "739b6b92ea629e64b15783470a9169d9"
+  } ]
+}

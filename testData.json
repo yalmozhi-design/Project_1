@@ -1,0 +1,12 @@
+{
+
+    "Username": "Admin",
+    "Password":"admi",
+    "array":["name","yal"],
+    "address": {
+
+        "Username": "Ad",
+        "Password":"ad"
+    }
+
+}

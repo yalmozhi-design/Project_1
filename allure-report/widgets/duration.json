@@ -1,0 +1,11 @@
+[ {
+  "uid" : "addf6d5709ed079d",
+  "name" : "auto suggestion values using for loop",
+  "time" : {
+    "start" : 1768448642289,
+    "stop" : 1768448649506,
+    "duration" : 7217
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
