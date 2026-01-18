@@ -1,7 +1,8 @@
 {
   "name": "playwrightprojects",
   "version": "1.0.0",
-  "description": "",
+  "type":"module",
+  "description": "<!-- prerqusites -->",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
@@ -10,9 +11,13 @@
   "devDependencies": {
     "@cucumber/cucumber": "^12.5.0",
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.6"
+    "@types/node": "^25.0.6",
+    "playwright-bdd": "^8.4.2"
   },
   "dependencies": {
     "allure-playwright": "^3.4.5"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
