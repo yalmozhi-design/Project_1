@@ -38,6 +38,7 @@ async verifyThePagLogine()
 {
     await expect(this.page.locator(this.signin)).toBeVisible()
 }
+
 }
 
 
