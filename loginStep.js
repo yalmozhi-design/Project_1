@@ -1,6 +1,5 @@
-import { Given, When, Then, setDefaultTimeout } from '@cucumber/cucumber';
-
-import { expect, firefox} from '@playwright/test';
+const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber')
+const { expect, firefox} = require ('@playwright/test')
 
  const url = "https://freelance-learn-automation.vercel.app/login"
  const username = "[placeholder='Enter Email']"
@@ -17,7 +16,7 @@ Given(`User should be on login page`, async () => {
     browser = await firefox.launch({ headless: false });
     context = await browser.newContext();
     page = await context.newPage();
-    await  page.goto(url)
+    await page.goto(url)
 
 });
 

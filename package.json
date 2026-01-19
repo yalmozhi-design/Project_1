@@ -1,7 +1,6 @@
 {
   "name": "playwrightprojects",
   "version": "1.0.0",
-  "type":"module",
   "description": "<!-- prerqusites -->",
   "main": "index.js",
   "scripts": {},
@@ -9,8 +8,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cucumber/cucumber": "^12.5.0",
-    "@playwright/test": "^1.57.0",
+    "@playwright/test": "^1.48.0",
     "@types/node": "^25.0.6",
     "playwright-bdd": "^8.4.2"
   },

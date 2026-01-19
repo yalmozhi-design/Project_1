@@ -1,5 +1,11 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
+const { defineConfig } = require('@playwright/test');
+const { defineBddConfig } = require('playwright-bdd');
+
+const testDir = defineBddConfig({
+  paths: ['tests/*.feature'], // Path to your feature files
+  require: ['tests/*.js'],    // Path to your step definitions
+});
 
 /**
  * Read environment variables from file.
@@ -12,7 +18,7 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
-export default defineConfig({
+module.exports = defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -23,8 +29,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 3,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html'],['allure-playwright']],
-
+  reporter: [['html']],
   // to generate third party allure report
   //first brew install allure
   //allure --version
@@ -51,16 +56,16 @@ export default defineConfig({
     //   use: { ...devices['Desktop Chrome'] },
     // },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] ,
-        trace:"on",
-        video:"on",
-        screenshot:"on"
-      // viewport:{width:700,height:709}
-      },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] ,
+    //     trace:"on",
+    //     video:"on",
+    //     screenshot:"on"
+    //   // viewport:{width:700,height:709}
+    //   },
       
-    },
+    // },
 
     // {
     //   name: 'webkit',
